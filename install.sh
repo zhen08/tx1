@@ -31,6 +31,10 @@ sudo mkdir /work_disk
 sudo mount /dev/sda1 /work_disk
 sudo chmod 777 /work_disk
 
+cd /usr/lib/aarch64-linux-gnu
+sudo ln -s libhdf5_serial.so.10 libhdf5.so
+sudo ln -s libhdf5_serial_hl.so.10 libhdf5_hl.so
+
 #Build caffe FP16
 export CAFFE_ROOT=/work_disk/caffe
 rm -rf $CAFFE_ROOT
