@@ -51,6 +51,7 @@ echo "INCLUDE_DIRS += /usr/include/hdf5/serial/" >> Makefile.config
 make -j4 all
 make -j4 test
 make -j4 runtest
+make -j4 pycaffe
 
 export PYTHONPATH=$CAFFE_ROOT/python:$PYTHONPATH
 
@@ -58,8 +59,8 @@ export PYTHONPATH=$CAFFE_ROOT/python:$PYTHONPATH
 export INFERENCE_ROOT=/work_disk/jetson-inference
 rm -rf $INFERENCE_ROOT
 git clone http://github.org/dusty-nv/jetson-inference $INFERENCE_ROOT
-mkdir  $INFERENCE_ROOT\build
-cd $INFERENCE_ROOT\build
+mkdir  $INFERENCE_ROOT/build
+cd $INFERENCE_ROOT/build
 cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=OFF ../
-cd $INFERENCE_ROOT\build
+cd $INFERENCE_ROOT/build
 make -j4
