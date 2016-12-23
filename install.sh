@@ -17,6 +17,12 @@ sudo apt-get install python-dev python-numpy -y
 sudo apt-get install libqt4-dev qt4-dev-tools libglew-dev glew-utils \
 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libglib2.0-dev -y
 
+sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev -y
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
+sudo apt-get install libxvidcore-dev libx264-dev -y
+sudo apt-get install libgtk-3-dev -y
+sudo apt-get install libopencv4tegra-python
+
 sudo usermod -a -G video $USER
 
 sudo apt-get install python-pip -y
