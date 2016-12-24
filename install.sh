@@ -32,11 +32,6 @@ sudo pip install --upgrade pip
 sudo ln -s /usr/lib/libsnappy.so.1 /usr/lib/libsnappy.so
 sudo ldconfig
 
-#Mount the SSD
-sudo mkdir /work_disk
-sudo mount /dev/sda1 /work_disk
-sudo chmod 777 /work_disk
-
 cd /usr/lib/aarch64-linux-gnu
 sudo ln -s libhdf5_serial.so.10 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.10 libhdf5_hl.so
