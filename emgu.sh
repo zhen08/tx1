@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd /work_disk
+rm -rf emgucv
 git clone git://git.code.sf.net/p/emgucv/code emgucv 
 cd emgucv
 git submodule update --init --recursive
