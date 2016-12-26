@@ -30,9 +30,22 @@ sudo apt-get install libjpeg8-dev libtiff5-dev libjasper-dev libpng12-dev -y
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
 sudo apt-get install libxvidcore-dev libx264-dev -y
 sudo apt-get install libgtk-3-dev -y
-sudo apt-get install libopencv4tegra-python
 
 sudo usermod -a -G video $USER
 
 sudo apt-get install python-pip -y
 sudo pip install --upgrade pip
+
+#OpenCV build dependencies
+# Some general development libraries
+sudo apt-get -y install build-essential make cmake cmake-curses-gui g++
+# libav video input/output development libraries
+sudo apt-get -y install libavformat-dev libavutil-dev libswscale-dev
+# Video4Linux camera development libraries
+sudo apt-get -y install libv4l-dev
+# Eigen3 math development libraries
+sudo apt-get -y install libeigen3-dev
+# OpenGL development libraries (to allow creating graphical windows)
+sudo apt-get -y install libglew1.6-dev
+# GTK development libraries (to allow creating graphical windows)
+sudo apt-get -y install libgtk2.0-dev
