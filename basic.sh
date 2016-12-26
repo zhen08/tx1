@@ -5,8 +5,8 @@ sudo add-apt-repository universe
 sudo apt-get update -y
 
 #remove libreoffice
-sudo apt-get purge libreoffice*
-sudo apt autoremove
+sudo apt-get purge libreoffice* -y
+sudo apt autoremove -y
 
 #Install Chromium
 sudo apt-get install chromium-browser -y
