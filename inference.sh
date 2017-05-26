@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #Build Jetson Inference
-export INFERENCE_ROOT=/work_disk/jetson-inference
+export INFERENCE_ROOT=~/jetson-inference
 rm -rf $INFERENCE_ROOT
 git clone http://github.org/dusty-nv/jetson-inference $INFERENCE_ROOT
 mkdir  $INFERENCE_ROOT/build
