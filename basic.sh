@@ -14,8 +14,8 @@ sudo apt-get install chromium-browser -y
 #Install cmake
 sudo apt-get install cmake -y
 
-sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev \
-libhdf5-serial-dev protobuf-compiler -y
+sudo apt-get install libleveldb-dev libsnappy-dev \
+libhdf5-serial-dev -y
 sudo apt-get install --no-install-recommends libboost-all-dev -y
 
 #BLAS
