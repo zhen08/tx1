@@ -9,7 +9,7 @@ sudo ln -s libhdf5_serial.so.10 libhdf5.so
 sudo ln -s libhdf5_serial_hl.so.10 libhdf5_hl.so
 
 #Build caffe FP16
-export CAFFE_ROOT=/work_disk/caffe
+export CAFFE_ROOT=~/caffe
 rm -rf $CAFFE_ROOT
 git clone -b experimental/fp16 https://github.com/NVIDIA/caffe $CAFFE_ROOT
 cat $CAFFE_ROOT/python/requirements.txt | xargs -n1 sudo pip install
