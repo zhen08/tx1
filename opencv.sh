@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /work_disk
+cd /home/ubuntu
 rm -rf opencv
 git clone https://github.com/opencv/opencv.git
 cd opencv
