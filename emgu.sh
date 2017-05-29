@@ -2,8 +2,9 @@
 
 cd ..
 rm -rf emgucv
-git clone git://git.code.sf.net/p/emgucv/code emgucv 
+git clone https://github.com/emgucv/emgucv.git 
 cd emgucv
+git checkout tags/3.2.0
 git submodule update --init --recursive
 cd platforms/ubuntu/16.04
 ./apt_install_dependency.sh
