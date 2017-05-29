@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /work_disk
+cd ..
 rm -rf emgucv
 git clone git://git.code.sf.net/p/emgucv/code emgucv 
 cd emgucv
