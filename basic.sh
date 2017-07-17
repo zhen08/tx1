@@ -36,6 +36,13 @@ sudo apt-get install -y python-dev python-numpy python-py python-pytest -y
 
 sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 
+sudo apt-get install -y qtcreator
+sudo apt-get install -y qt5-default
+
+cd /usr/lib/aarch64-linux-gnu
+sudo rm libGL.so
+sudo ln -s /usr/lib/aarch64-linux-gnu/tegra/libGL.so libGL.so
+
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout -b v3.2.0 3.2.0
@@ -88,11 +95,3 @@ make -j6
 sudo make install
 
 sudo apt-get install -y dconf-editor
-
-sudo apt-get install -y qtcreator
-sudo apt-get install -y qt5-default
-
-cd /usr/lib/aarch64-linux-gnu
-sudo rm libGL.so
-sudo ln -s /usr/lib/aarch64-linux-gnu/tegra/libGL.so libGL.so
-
