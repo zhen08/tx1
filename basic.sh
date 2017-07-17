@@ -34,6 +34,8 @@ sudo apt-get install -y \
 # Python 2.7
 sudo apt-get install -y python-dev python-numpy python-py python-pytest -y
 
+sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout -b v3.2.0 3.2.0
@@ -65,7 +67,7 @@ cmake \
     -DWITH_OPENMP=OFF \
     -DWITH_FFMPEG=ON \
     -DWITH_GSTREAMER=ON \
-    -DWITH_GSTREAMER_0_10=OFF \
+    -DWITH_GSTREAMER_0_10=ON \
     -DWITH_CUDA=ON \
     -DWITH_GTK=ON \
     -DWITH_VTK=OFF \
