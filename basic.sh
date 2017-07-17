@@ -58,7 +58,7 @@ cmake \
     -DBUILD_JPEG=OFF \
     -DBUILD_JASPER=OFF \
     -DBUILD_ZLIB=OFF \
-    -DBUILD_EXAMPLES=ON \
+    -DBUILD_EXAMPLES=OFF \
     -DBUILD_opencv_java=OFF \
     -DBUILD_opencv_python2=ON \
     -DBUILD_opencv_python3=OFF \
@@ -68,6 +68,7 @@ cmake \
     -DWITH_FFMPEG=ON \
     -DWITH_GSTREAMER=ON \
     -DWITH_GSTREAMER_0_10=OFF \
+    -DWITH_QT=ON \
     -DWITH_CUDA=ON \
     -DWITH_GTK=ON \
     -DWITH_VTK=OFF \
@@ -77,8 +78,8 @@ cmake \
     -DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-8.0 \
     -DCUDA_ARCH_BIN=6.2 \
     -DCUDA_ARCH_PTX="" \
-    -DINSTALL_C_EXAMPLES=ON \
-    -DINSTALL_TESTS=ON \
+    -DINSTALL_C_EXAMPLES=OFF \
+    -DINSTALL_TESTS=OFF \
     -DOPENCV_TEST_DATA_PATH=../opencv_extra/testdata \
     ../
 
