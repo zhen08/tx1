@@ -1,5 +1,10 @@
 #!/bin/sh
 
+#Enable all 6 cores on TX2
+cd $HOME
+sudo nvpmodel -m 0
+sudo ./jetson_clocks.sh
+
 #General dependencies
 sudo add-apt-repository universe
 sudo apt-get update -y
