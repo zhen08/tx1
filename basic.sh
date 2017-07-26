@@ -29,6 +29,7 @@ sudo apt-get install -y \
     libtbb-dev \
     libgtk2.0-dev \
     cmake \
+    screen \
     pkg-config
 
 # Python 2.7
