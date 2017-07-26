@@ -44,6 +44,7 @@ cd /usr/lib/aarch64-linux-gnu
 sudo rm libGL.so
 sudo ln -s /usr/lib/aarch64-linux-gnu/tegra/libGL.so libGL.so
 
+cd $HOME
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout -b v3.2.0 3.2.0
