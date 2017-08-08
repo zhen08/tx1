@@ -41,7 +41,7 @@ sudo apt-get install -y \
 sudo apt-get install -y python-dev python-numpy python-py python-pytest -y
 
 sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
-sudo apt-get install -y gstreamer1.0-plugins-bad
+sudo apt-get install -y gstreamer1.0-plugins-bad gstreamer1.0-libav
 
 sudo apt-get install -y qtcreator
 sudo apt-get install -y qt5-default
