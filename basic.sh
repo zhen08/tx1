@@ -104,4 +104,12 @@ cmake \
 make -j6
 sudo make install
 
+cd $HOME
+git clone https://github.com/apache/thrift.git
+cd thrift
+./bootstrap.sh
+./configure --with-boost=/usr/local
+make -j1
+sudo make install
+
 sudo apt-get install -y dconf-editor
