@@ -18,7 +18,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y build-essential
 
 sudo apt-get install -y libunwind8 libunwind8-dev gettext libicu-dev liblttng-ust-dev libcurl4-openssl-dev libssl-dev uuid-dev unzip
-
+sudo apt-get install -y libboost-all-dev
 cd $HOME
 sudo apt-get install -y \
     libglew-dev \
